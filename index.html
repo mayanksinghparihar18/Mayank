@@ -1,50 +1,30 @@
-<!DOCTYPE html>
-<html>
-<head>
-  <title>Rajarajeshwari Mart</title>
-  <style>
-    body { font-family: Arial; margin: 0; background: #f5f5f5; }
-    header { background: #2d89ef; color: white; padding: 15px; text-align: center; }
-    .container { display: flex; gap: 20px; padding: 20px; flex-wrap: wrap; }
-    .card {
-      background: white;
-      padding: 10px;
-      border-radius: 10px;
-      width: 30%;
-      box-shadow: 0 0 10px rgba(0,0,0,0.1);
-    }
-    .card img { width: 100%; border-radius: 10px; }
-    .price { color: green; font-weight: bold; }
-  </style>
-</head>
-
-<body>
-
-<header>
-  <h1>Rajarajeshwari Mart 🛒</h1>
-</header>
-
-<div class="container">
-
-  <div class="card">
-    <img src="https://images.unsplash.com/photo-1542838132-92c53300491e">
-    <h3>Fresh Vegetables</h3>
-    <p class="price">₹30/kg</p>
-  </div>
-
-  <div class="card">
-    <img src="https://images.unsplash.com/photo-1583258292688-d0213dc5a3a8">
-    <h3>Fresh Fruits</h3>
-    <p class="price">₹50/kg</p>
-  </div>
-
-  <div class="card">
-    <img src="https://images.unsplash.com/photo-1578916171728-46686eac8d58">
-    <h3>Rice & Grains</h3>
-    <p class="price">₹45/kg</p>
-  </div>
-
-</div>
-
-</body>
-</html>
+Great question! Since your website is currently using mock data, editing product rates is very simple. Let me show you how:
+Action: file_editor view /app/frontend/src/data/mockData.js
+Observation: [Showing lines 25-50 of 145 total] /app/frontend/src/data/mockData.js:
+25|    description: "Fresh vegetables, fruits, grains, and daily essentials",
+26|    image: "https://images.unsplash.com/photo-1542838132-92c53300491e"
+27|  },
+28|  {
+29|    id: 2,
+30|    name: "Stationery Items",
+31|    icon: "PencilRuler",
+32|    description: "School supplies, office items, notebooks, and more",
+33|    image: "https://images.unsplash.com/photo-1654931800100-2ecf6eee7c64"
+34|  },
+35|  {
+36|    id: 3,
+37|    name: "Cosmetics",
+38|    icon: "Sparkles",
+39|    description: "Beauty products, skincare, makeup, and personal care",
+40|    image: "https://images.unsplash.com/photo-1583209814683-c023dd293cc6"
+41|  }
+42|];
+43|
+44|export const featuredProducts = {
+45|  grocery: [
+46|    { id: 1, name: "Fresh Vegetables", price: "₹30/kg", discount: "10% OFF", image: "https://images.unsplash.com/photo-1542838132-92c53300491e" },
+47|    { id: 2, name: "Fresh Fruits", price: "₹50/kg", discount: "15% OFF", image: "https://images.unsplash.com/photo-1583258292688-d0213dc5a3a8" },
+48|    { id: 3, name: "Rice & Grains", price: "₹45/kg", discount: "", image: "https://images.unsplash.com/photo-1578916171728-46686eac8d58" },
+49|    { id: 4, name: "Daily Essentials", price: "₹20", discount: "5% OFF", image: "https://images.unsplash.com/photo-1604719312566-8912e9227c6a" }
+50|  ],
+ [26 lines shown. Remaining: lines 51-145 (95 lines). Use view_range parameter to continue.]
